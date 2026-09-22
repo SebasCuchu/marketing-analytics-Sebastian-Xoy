@@ -21,6 +21,6 @@ modelo_lr = LinearRegression()
 modelo_lr.fit(variable_x,variable_y)
 #En Streamlit tenemos un boton que dice predecir 
 if st.button("Predecir"):
-resultado = modelo_lr.predict([[gasto]])
-st.success(f"Las ventas proyectadas para una inversion de ${gasto} son:
-${resultado[0]}")
+    resultado = modelo_lr.predict([[gasto]])
+    st.success(f"Las ventas proyectadas para una inversion de ${gasto} son:
+    ${resultado[0]}")
